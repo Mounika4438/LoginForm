@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Input Types Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            max-width: 800px;
+            margin: auto;
+            padding: 40px;
+            line-height: 1.6;
+            font-size: 24px;
+        }
+
+        pre {
+            background-color: #eef2f3;
+            padding: 15px;
+            border-left: 4px solid #007acc;
+            font-size: 24px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="number"],
+        input[type="file"],
+        input[type="color"],
+        input[type="date"],
+        input[type="week"],
+        input[type="month"] {
+            padding: 10px;
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 24px;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 12px 24px;
+            margin: 20px 10px 0 0;
+            border: none;
+            background-color: #007acc;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #005fa3;
+        }
+
+        hr {
+            margin: 30px 0;
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        h1 {
+            text-align: center;
+            color: #005fa3;
+            font-size: 32px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Input Types Demo</h1>
+<form>
+
+    <pre>
+Input type - text:
+A single-line text field. The value attribute defines the
+value of the input field.
+    </pre>
+    <label>Name:</label>
+    <input type="text" placeholder="Enter any text">
+
+    <hr>
+    <pre>
+Input type - password:
+An input field can be used to enter a password.
+
+Required:
+The required attribute specifies that user input is a must.
+If the user does not enter any value in the input field which
+is associated with this attribute, a default error message appears
+on the screen.
+    </pre>
+    <label>Password:</label>
+    <input type="password" placeholder="Enter your password" required>
+
+    <hr>
+    <pre>
+Input type - email:
+• An input field that accepts email addresses.
+• It has in-built validation for an email.
+    </pre>
+    <label>Email:</label>
+    <input type="email" placeholder="Enter your email">
+
+    <hr>
+    <pre>
+Input type - number:
+• Defines an input text box for only numerical input.
+• Gives an error if values go beyond min/max limits or include invalid characters.
+• Attributes: min, max, and step.
+    </pre>
+    <label>Age:</label>
+    <input type="number" placeholder="Enter your age">
+    <label>Range:</label><input type="range" value="50">
+
+    <hr>
+    <pre>
+Input type - checkbox:
+• Defines checkboxes.
+• Multiple options can be selected.
+    </pre>
+    <label>Hobbies:</label>
+    <input type="checkbox" checked> <label style="display: inline;">Reading</label>
+    <input type="checkbox" checked> <label style="display: inline;">Singing</label>
+    <input type="checkbox"> <label style="display: inline;">Dancing</label>
+
+    <hr>
+    <pre>
+Input type - radio:
+• Defines radio buttons.
+• Only one option can be selected per group (same name).
+    </pre>
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="Male"> <label style="display: inline;">Male</label>
+    <input type="radio" name="gender" value="Female"> <label style="display: inline;">Female</label>
+
+    <hr>
+    <pre>
+Input type - file:
+Creates a control to upload files to the server.
+    </pre>
+    <label>Select a file:</label>
+    <input type="file">
+
+    <hr>
+    <pre>
+Input type - color:
+Defines a color picker.
+    </pre>
+    <label>Choose a color:</label>
+    <input type="color">
+
+    <hr>
+    <pre>
+Input type - date:
+Creates a calendar picker to select a date.
+    </pre>
+    <label>Date of Birth:</label>
+    <input type="date">
+
+    <hr>
+    <pre>
+Input type - week:
+Defines a week picker.
+    </pre>
+    <label>Week:</label>
+    <input type="week">
+
+    <hr>
+    <pre>
+Input type - month:
+Defines a month picker.
+    </pre>
+    <label>Select a month:</label>
+    <input type="month">
+    <br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
